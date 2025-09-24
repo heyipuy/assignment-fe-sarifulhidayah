@@ -12,3 +12,9 @@ export const ProductSchema = z.object({
     count: z.number(),
   }),
 });
+
+export type Product = z.infer<typeof ProductSchema>;
+
+export const CategorySchema = z.string();
+
+export type Category = z.infer<typeof CategorySchema>;
